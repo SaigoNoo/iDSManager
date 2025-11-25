@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>iDSManager</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/profile.css">
+</head>
+<body onload="load_picture(); preload_data();">
+<menu>
+    <a href="index.html#main_content">Rechercher</a>
+    <a href="#">Logiciel Client PC</a>
+    <a id="api">API</a>
+    <a href="#">A propos</a>
+    <a id="connection" href="#header_anchor">Se connecter</a>
+</menu>
+<header id="header_anchor">
+    <div id="header_mainview">
+        <img id="charizard" src="img/dracaufeu.gif" alt="dracaufeu">
+        <h1><span>iDSManager</span> Editor</h1>
+        <p>Votre gestionnaire de jeu en ligne !</p>
+        <div class="buttons">
+            <button onclick="move_page('index')">🎮 Voir les jeux</button>
+            <button onclick="move('')">👤 Configurer mon profil</button>
+        </div>
+    </div>
+    <div id="infos" style="visibility: hidden; display: none">
+        <h1>Bienvenue <span id="name_info"></span></h1>
+        <p>Personalisez votre compte comme bon vous semble !</p>
+    </div>
+    <div id="login">
+        <h1>Connexion</h1>
+        <form onsubmit="authentification(this, event)">
+            <label for="username">Identifiant</label>
+            <input type="text" id="username" name="username" placeholder="Votre identifiant" required>
+            <label for="password">Mot de passe</label>
+            <input type="password" id="password" name="password" placeholder="Votre mot de passe" required>
+            <input type="submit" value="Connexion">
+        </form>
+        <span id="login_error"></span>
+    </div>
+</header>
+
+<div id="card">
+    <div id="profil_editor">
+        <!-- Photo -->
+        <div id="picture">
+            <div class="square pfp-container">
+                <img id="pfp_preview" alt="Photo de profil">
+                <div class="overlay">Modifier</div>
+                <input type="file" id="pfp_input" accept="image/*" style="display:none;" onchange="previewPfp(this)">
+            </div>
+        </div>
+
+        <!-- Détails -->
+        <div id="details">
+            <!-- Identité -->
+            <div id="data_edit">
+                <h2>Identité</h2>
+                <div class="dedit">
+                    <label for="name">Nom</label>
+                    <input oninput="has_change_for_save()" type="text" id="name" name="name"
+                           placeholder="Nom" required/>
+                </div>
+                <div class="dedit">
+                    <label for="fname">Prénom</label>
+                    <input oninput="has_change_for_save()" type="text" id="fname" name="fname"
+                           placeholder="Prénom" required/>
+                </div>
+                <div class="dedit">
+                    <label for="email">Adresse e-mail</label>
+                    <input oninput="has_change_for_save()" type="email" id="email" name="email"
+                           placeholder="e-mail" required/>
+                </div>
+            </div>
+
+            <!-- Mot de passe -->
+            <div id="data_password">
+                <h2>Mot de passe</h2>
+                <div class="dedit">
+                    <label for="password_edit">Nouveau mot de passe</label>
+                    <input type="password" id="password_edit" name="password" placeholder="••••••"/>
+                </div>
+                <div class="dedit">
+                    <label for="password_confirm">Confirmer mot de passe</label>
+                    <input type="password" id="password_confirm" name="password_confirm" placeholder="••••••"/>
+                </div>
+            </div>
+        </div>
+        <div id="buttons">
+            <input type="button" value="Valider la nouvelle photo">
+            <input type="button" value="Valider les données">
+            <input type="button" value="Annuler les changements">
+        </div>
+    </div>
+</div>
+
+
+<script src="js/global.js"></script>
+<script src="js/editor.js"></script>
+<script src="js/authentification.js"></script>
+<script src="js/profil.js"></script>
+<script>
+    if (!have_token()) {
+        move_page("index");
+    }
+</script>
+</body>
+</html>

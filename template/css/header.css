@@ -1,0 +1,257 @@
+/* ======= ANIMATIONS ======= */
+@keyframes slideshow {
+    0% {
+        background-image: url('../img/bg/295752.gif');
+    }
+    20% {
+        background-image: url('../img/bg/380117.png');
+    }
+    40% {
+        background-image: url('../img/bg/509521.png');
+    }
+    60% {
+        background-image: url('../img/bg/1181595.jpg');
+    }
+    80% {
+        background-image: url('../img/bg/1245171.jpg');
+    }
+    90% {
+        background-image: url('../img/bg/1267107.jpg');
+    }
+    100% {
+        background-image: url('../img/bg/1371356.jpg');
+    }
+}
+
+@keyframes levitation {
+    0% {
+        transform: translate(-50%, -50%);
+    }
+    50% {
+        transform: translate(-50%, -60%);
+    }
+    100% {
+        transform: translate(-50%, -50%);
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* ======= HEADER ======= */
+header {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: white;
+    animation: slideshow 25s ease-in-out infinite;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 0 5%;
+    z-index: 0;
+}
+
+/* ======= MENU ======= */
+menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    animation: slideshow 25s ease-in-out infinite;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: sticky;
+    top: 0;
+    left: 0;
+    gap: 40px;
+    padding: 15px;
+    backdrop-filter: blur(5px);
+    z-index: 100;
+}
+
+menu::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0,0,0,0.3); /* fond semi-transparent */
+    backdrop-filter: blur(5px);
+    z-index: -1; /* derrière le menu et Charizard */
+}
+
+.locked {
+    background-color: rgba(0,0,0,0.3) !important;
+    color: white !important;
+    border-color: #333333 !important;
+}
+
+.locked:hover {
+    border-color: #333333 !important;
+    cursor: auto;
+    transform: none !important;
+}
+
+menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 300;
+    border-top: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+menu a:hover {
+    transform: translateY(-3px);
+    color: orange;
+}
+
+#charizard {
+    width: 50%;
+    position: relative;
+    top: 10vh;
+    left: 25%;
+    animation: levitation 1s ease-in-out infinite;
+    z-index: 50;
+}
+
+#header_mainview {
+    width: 60%;
+    text-align: center;
+}
+
+#header_mainview h1 {
+    font-size: 50px;
+    font-weight: 400;
+    -webkit-text-stroke: 1px black;
+}
+
+#header_mainview h1 span,
+#login h1 {
+    color: orange;
+    -webkit-text-stroke: 1px #000;
+}
+
+#header_mainview p {
+    font-size: 22px;
+    font-style: italic;
+    opacity: 0.9;
+    margin: 15px 0;
+    -webkit-text-stroke: 1.5px black;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.buttons button {
+    background-color: white;
+    color: orange;
+    border: 2px solid orange;
+    padding: 10px 25px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.buttons button:hover {
+    background-color: orange;
+    color: white;
+    border-color: white;
+    transform: translateY(-2px);
+}
+
+/* ======= LOGIN FORM ======= */
+#login, #infos {
+    width: 25%;
+    padding: 5vh 5%;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.85);
+    margin: 2rem auto;
+    text-align: center;
+}
+
+#login label {
+    color: orange;
+    display: block;
+    text-align: left;
+    margin: 0.5rem 0;
+}
+
+#login input {
+    display: block;
+    padding: 1vh 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid orange;
+    color: orange;
+    background-color: white;
+}
+
+#login input::placeholder, #infos p {
+    color: gray;
+}
+
+#login input[type="submit"] {
+    margin-top: 1rem;
+    border: 1px solid orange;
+    background-color: white;
+    cursor: pointer;
+}
+
+#login input[type="submit"]:hover {
+    background-color: orange;
+    color: white;
+    border-color: white;
+}
+
+#login_error {
+    color: red;
+}
+
+#infos h1 span, #infos h1 {
+    color: orange;
+}
+
+#infos p {
+    padding: 5vh 3%;
+    text-align: justify;
+}
+
+#infos p a {
+    text-decoration: none;
+    -webkit-text-stroke: 1px orange;
+    color: white;
+}
+
+#infos p a:hover {
+    color: orange;
+    -webkit-text-stroke: 0 white;
+}
+
+#infos button {
+    background-color: white;
+    color: orange;
+    width: 100%;
+    margin-top: 1vh;
+    padding: 1.5vh 8%;
+    border: 2px solid orange;
+}
+
+#infos button:hover {
+    background-color: orange;
+    border-color: white;
+    color: white;
+}

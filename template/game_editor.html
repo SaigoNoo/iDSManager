@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>iDSManager</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/editor.css">
+</head>
+<body onload="create_index()">
+<menu>
+    <a href="index.html#main_content">Rechercher</a>
+    <a href="#">Logiciel Client PC</a>
+    <a id="api">API</a>
+    <a href="#">A propos</a>
+    <a id="connection" href="#header_anchor">Se connecter</a>
+</menu>
+<header id="header_anchor">
+    <div id="header_mainview">
+        <img id="charizard" src="img/dracaufeu.gif" alt="dracaufeu">
+        <h1><span>iDSManager</span> Editor</h1>
+        <p>Votre gestionnaire de jeu en ligne !</p>
+        <div class="buttons">
+            <button onclick="move_page('index')">🎮 Voir les jeux</button>
+            <button onclick="move_page('profil_editor')">👤 Configurer mon profil</button>
+        </div>
+    </div>
+    <div id="infos" style="visibility: hidden; display: none">
+        <h1>Bienvenue <span id="name_info"></span></h1>
+        <p>Vous êtes bien sur le mode édition de l'application ! Ici vous pourrez configurer votre bibliothèque de jeu a
+            vitesse grand V !</p>
+        <button>Importer une bibliothèque</button>
+        <button>Exporter ma bibliothèque</button>
+    </div>
+    <div id="login">
+        <h1>Connexion</h1>
+        <form onsubmit="authentification(this, event)">
+            <label for="username">Identifiant</label>
+            <input type="text" id="username" name="username" placeholder="Votre identifiant" required>
+            <label for="password">Mot de passe</label>
+            <input type="password" id="password" name="password" placeholder="Votre mot de passe" required>
+            <input type="submit" value="Connexion">
+        </form>
+        <span id="login_error"></span>
+    </div>
+</header>
+<div id="index_mainpage">
+    <div id="index_search">
+        <div id="header_search">
+            <h2>Jeux</h2>
+            <input oninput="search_game(this.value)" type="search" id="search_game" placeholder="Pokémon Rouge Feu..."/>
+        </div>
+        <div id="search_results"></div>
+    </div>
+    <div id="main_editor">
+        <div id="image_preview_div">
+            <img id="image_preview" src="https://i.redd.it/ppol67krri8f1.png" alt="preview"/>
+        </div>
+        <div id="data_game">
+            <h2>Éditer <span id="game_name"></span></h2>
+            <div id="data_edit">
+                <div class="dedit">
+                    <label for="tagname">Tag de jeu / ID</label>
+                    <input oninput="has_change_for_save()" type="text" id="tagname" name="tagname"
+                           placeholder="Votre tag de jeu" required/>
+                </div>
+                <div class="dedit">
+                    <label for="title">Titre de jeu (FR)</label>
+                    <input oninput="has_change_for_save()" type="text" id="title" name="title"
+                           placeholder="Votre titre de jeu" required/>
+                </div>
+                <div class="dedit">
+                    <label for="title_original">Titre du jeu (EN)</label>
+                    <input oninput="has_change_for_save()" type="text" id="title_original" name="title_original"
+                           placeholder="Votre titre de jeu" required/>
+                </div>
+                <div class="dedit">
+                    <label for="release">Année de sortie</label>
+                    <input oninput="has_change_for_save()" type="number" name="release" id="release" min="1970"
+                           maxlength="4" minlength="4"
+                           placeholder="2000" required>
+                </div>
+            </div>
+        </div>
+        <div id="descriptions">
+            <div class="dedit">
+                <label for="cover_url">URL de la cover</label>
+                <input type="url" id="cover_url" name="cover_url" placeholder="Votre URL"
+                       oninput="update_preview(this) && has_change_for_save()" required>
+            </div>
+            <div class="dedit">
+                <label for="description">Description (FR)</label>
+                <textarea oninput="has_change_for_save()" id="description" name="description"
+                          placeholder="Votre description de jeu" required></textarea>
+            </div>
+            <div class="dedit">
+                <label for="description_original">Description (EN)</label>
+                <textarea oninput="has_change_for_save()" id="description_original" name="description_original"
+                          placeholder="Votre description de jeu" required></textarea>
+            </div>
+        </div>
+        <div id="buttons_actions">
+            <button onclick="save_data()" disabled>Enregistrer les changements</button>
+            <button onclick="empty_inputs()" disabled>Annuler</button>
+            <button onclick="" id="delete_button" disabled>Supprimer</button>
+        </div>
+    </div>
+    <script src="js/global.js"></script>
+    <script src="js/editor.js"></script>
+    <script src="js/authentification.js"></script>
+    <script>
+        if (!have_token()) {
+            move_page("index");
+        }
+    </script>
+</div>
+</body>
+</html>

@@ -1,0 +1,151 @@
+/* Container card full screen, centré */
+#card {
+    display: flex;
+    justify-content: center; /* horizontal */
+    align-items: center; /* vertical */
+    height: 100vh;
+}
+
+/* Profil editor : flex horizontal */
+#profil_editor {
+    display: flex;
+    flex-direction: column; /* tout empilé verticalement */
+    align-items: center;
+    width: 50%;
+    background-color: wheat;
+    padding: 2rem;
+    border-radius: 12px;
+    gap: 2rem;
+}
+
+/* Photo carré rond */
+.square {
+    aspect-ratio: 1 / 1;
+    width: 150px;
+    overflow: hidden;
+    border-radius: 100%;
+}
+
+#pfp_preview {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+/* Détails flex vertical avec gap */
+#details {
+    display: flex; /* container horizontal */
+    flex-direction: row; /* côte à côte */
+    gap: 2rem; /* espace entre les deux colonnes */
+    flex: 1; /* prend le reste de la largeur */
+}
+
+#data_edit, #data_password {
+    display: flex;
+    flex-direction: column;
+    flex: 1; /* prend la moitié de l’espace disponible */
+}
+
+.dedit {
+    display: flex;
+    flex-direction: column; /* label au-dessus de l’input */
+    margin-bottom: 1rem;
+}
+
+.dedit label {
+    font-weight: 500;
+    margin-bottom: 0.25rem;
+    color: black;
+}
+
+.dedit input {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+/* Titres */
+#data_edit h2,
+#data_password h2 {
+    margin-bottom: 0.75rem;
+}
+
+#picture {
+    align-self: center;
+}
+
+#picture, #details {
+    display: flex;
+    gap: 2rem;
+}
+
+.pfp-container {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.pfp-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    transition: 0.3s ease;
+}
+
+/* Overlay caché par défaut */
+.pfp-container .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.3s ease;
+    border-radius: 50%;
+}
+
+/* Hover → overlay visible et image un peu assombrie */
+.pfp-container:hover img {
+    filter: brightness(70%);
+}
+
+.pfp-container:hover .overlay {
+    opacity: 1;
+}
+
+/* Footer boutons */
+#buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center; /* centre horizontal */
+    margin-top: auto; /* pousse les boutons en bas */
+    width: 100%;
+}
+
+#buttons input[type="button"] {
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#buttons input[type="button"]:hover {
+    background-color: #ddd;
+}
+
+

@@ -1,0 +1,41 @@
+{
+    "pokemon_firered": {
+        "tag_name": "pokemon_firered",
+        "title": {
+            "fr": "Pok\u00e9mon Rouge Feu",
+            "en": "Pok\u00e9mon FireRed"
+        },
+        "description": {
+            "fr": "Revivez l\u2019aventure Pok\u00e9mon originale, r\u00e9imagin\u00e9e avec des graphismes et un gameplay am\u00e9lior\u00e9s dans Pok\u00e9mon Rouge Feu. Commencez votre p\u00e9riple depuis Bourg Palette avec un Salam\u00e8che, Carapuce ou Bulbizarre, dans le but de compl\u00e9ter le Pok\u00e9dex du Professeur Chen et de vaincre la Ligue Pok\u00e9mon. Affrontez la sinistre Team Rocket, dirig\u00e9e par l\u2019\u00e9nigmatique Giovanni, qui cherche \u00e0 exploiter les Pok\u00e9mon pour le profit. Explorez la nostalgique r\u00e9gion de Kanto enrichie de fonctionnalit\u00e9s modernes, dont le nouvel archipel des \u00celes Sevii, les \u00e9changes sans fil, et un Pok\u00e9dex \u00e9largi incluant les 151 Pok\u00e9mon originaux ainsi que plusieurs esp\u00e8ces de Johto. Ma\u00eetrisez le syst\u00e8me de combats bas\u00e9 sur les types, chassez les Pok\u00e9mon exclusifs \u00e0 la version comme Caninos et Arcanin, et d\u00e9couvrez des objets cach\u00e9s gr\u00e2ce aux outils Cherche VS et Top Dresseur.",
+            "en": "Relive the original Pok\u00e9mon adventure reimagined with enhanced graphics and gameplay in Pok\u00e9mon FireRed. Begin your journey from Pallet Town with a Charmander, Squirtle, or Bulbasaur as you aim to complete Professor Oak's Pok\u00e9dex and defeat the Elite Four. Challenge the sinister Team Rocket, led by the enigmatic Giovanni, who schemes to exploit Pok\u00e9mon for profit. Explore the nostalgic Kanto region with modernized features including the new Sevii Islands archipelago, wireless trading capabilities, and an expanded Pok\u00e9dex featuring 151 original Pok\u00e9mon plus select Johto species. Master the type-matchup battle system, hunt for version-exclusive Pok\u00e9mon like Growlithe and Arcanine, and discover hidden items with the VS Seeker and Fame Checker tools."
+        },
+        "release": 2004,
+        "cover_url": "https://www.pokepedia.fr/images/thumb/3/3b/Jaquette_de_Pok%C3%A9mon_Rouge_Feu.png/596px-Jaquette_de_Pok%C3%A9mon_Rouge_Feu.png?20220306100639"
+    },
+    "pokemon_leafgreen": {
+        "tag_name": "pokemon_leafgreen",
+        "title": {
+            "fr": "Pok\u00e9mon Vert Feuille",
+            "en": "Pok\u00e9mon LeafGreen"
+        },
+        "description": {
+            "en": "Relive the original Pok\u00e9mon adventure reimagined with enhanced graphics and gameplay in Pok\u00e9mon LeafGreen. Begin your journey from Pallet Town with a Charmander, Squirtle, or Bulbasaur as you aim to complete Professor Oak's Pok\u00e9dex and defeat the Elite Four. Challenge the sinister Team Rocket, led by the enigmatic Giovanni, who schemes to exploit Pok\u00e9mon for profit. Explore the nostalgic Kanto region with modernized features including the new Sevii Islands archipelago, wireless trading capabilities, and an expanded Pok\u00e9dex featuring 151 original Pok\u00e9mon plus select Johto species. Master the type-matchup battle system, hunt for version-exclusive Pok\u00e9mon like Growlithe and Arcanine, and discover hidden items with the VS Seeker and Fame Checker tools.",
+            "fr": "Revivez l\u2019aventure Pok\u00e9mon originale, r\u00e9imagin\u00e9e avec des graphismes et un gameplay am\u00e9lior\u00e9s dans Pok\u00e9mon Vert Feuille. Commencez votre p\u00e9riple depuis Bourg Palette avec un Salam\u00e8che, Carapuce ou Bulbizarre, dans le but de compl\u00e9ter le Pok\u00e9dex du Professeur Chen et de vaincre la Ligue Pok\u00e9mon. Affrontez la sinistre Team Rocket, dirig\u00e9e par l\u2019\u00e9nigmatique Giovanni, qui cherche \u00e0 exploiter les Pok\u00e9mon pour le profit. Explorez la nostalgique r\u00e9gion de Kanto enrichie de fonctionnalit\u00e9s modernes, dont le nouvel archipel des \u00celes Sevii, les \u00e9changes sans fil, et un Pok\u00e9dex \u00e9largi incluant les 151 Pok\u00e9mon originaux ainsi que plusieurs esp\u00e8ces de Johto. Ma\u00eetrisez le syst\u00e8me de combats bas\u00e9 sur les types, chassez les Pok\u00e9mon exclusifs \u00e0 la version comme Caninos et Arcanin, et d\u00e9couvrez des objets cach\u00e9s gr\u00e2ce aux outils Cherche VS et Top Dresseur."
+        },
+        "release": 2004,
+        "cover_url": "https://www.pokepedia.fr/images/9/9e/Jaquette_de_Pok%C3%A9mon_Vert_Feuille.png"
+    },
+    "pokemon_yellow": {
+        "tag_name": "pokemon_yellow",
+        "title": {
+            "fr": "Pok\u00e9mon Jaune",
+            "en": "Pok\u00e9mon Yellow"
+        },
+        "description": {
+            "fr": "Tout comme Pok\u00e9mon Rouge et Bleu, l'action de Pok\u00e9mon Jaune se d\u00e9roule dans la r\u00e9gion fictive de Kanto, qui est toujours habit\u00e9e par les m\u00eames 151 esp\u00e8ces de Pok\u00e9mon.\n\nLe but du jeu reste le m\u00eame, seules quelques l\u00e9g\u00e8res diff\u00e9rences subsistent. Par exemple, le protagoniste silencieux ne choisit pas son Pok\u00e9mon parmi les trois de d\u00e9part comme dans les jeux originaux. \u00c0 la place, le professeur Chen lui offre un Pikachu sauvage captur\u00e9 avant, tandis que le rival prend un \u00c9voli, \u00e0 l'origine pour le protagoniste.\n\nL'histoire du jeu reprend celle de la s\u00e9rie anim\u00e9e Pok\u00e9mon, jusqu'\u00e0 avoir Pikachu qui suit le protagoniste. Le joueur peut avoir, \u00e9galement, durant le jeu les trois \u00ab Pok\u00e9mon de d\u00e9part \u00bb des versions pr\u00e9c\u00e9dentes, c'est-\u00e0-dire Bulbizarre, Salam\u00e8che et Carapuce.\n\nTout au long du jeu, le joueur devra combattre les forces de la Team Rocket, une organisation criminelle qui vole les Pok\u00e9mon. Tout comme dans la s\u00e9rie anim\u00e9e Pok\u00e9mon, il devra d\u00e9fier le duo Jessie-James avec leurs Pok\u00e9mon, Abo/Arbok, Smogo/Smogogo et Miaouss[2]. Le huiti\u00e8me et dernier Champion s'av\u00e9rera \u00eatre Giovanni, le chef de la Team Rocket ; sa d\u00e9faite face au joueur marque la fin de l'organisation.",
+            "en": "Just like Pok\u00e9mon Red and Blue, the action in Pok\u00e9mon Yellow takes place in the fictional Kanto region, which is still home to the same 151 Pok\u00e9mon species.\n\nThe objective of the game remains the same, with only a few small differences. For example, the silent protagonist doesn\u2019t choose their starter Pok\u00e9mon from the classic trio like in the original games. Instead, Professor Oak gives them a previously captured wild Pikachu, while the rival chooses an Eevee that was originally meant for the protagonist.\n\nThe story of the game follows that of the Pok\u00e9mon animated series, even featuring Pikachu walking behind the protagonist. Throughout the adventure, the player can also obtain the three original \u201cstarter Pok\u00e9mon\u201d from previous versions: Bulbasaur, Charmander, and Squirtle.\n\nDuring the game, the player must fight against the forces of Team Rocket, a criminal organization that steals Pok\u00e9mon. Just like in the anime, they will have to face the duo Jessie and James with their Pok\u00e9mon: Ekans/Arbok, Koffing/Weezing, and Meowth. The eighth and final Gym Leader turns out to be Giovanni, the boss of Team Rocket; defeating him marks the end of the organization."
+        },
+        "release": 2000,
+        "cover_url": "https://www.gamecash.be/thumbnail-600/pokemon-jaune-e57727-e65049.jpg"
+    }
+}

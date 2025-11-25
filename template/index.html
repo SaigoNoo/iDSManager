@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>iDSManager</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/header.css">
+</head>
+<body>
+<menu>
+    <a href="#main_content">Rechercher</a>
+    <a href="#">Logiciel Client PC</a>
+    <a id="api">API</a>
+    <a href="#">A propos</a>
+    <a id="connection" href="#header_anchor">Se connecter</a>
+</menu>
+<header id="header_anchor">
+    <div id="header_mainview">
+        <img id="charizard" src="img/dracaufeu.gif" alt="dracaufeu">
+        <h1>Bienvenue sur <span>iDSManager</span></h1>
+        <p>Votre gestionnaire de jeu en ligne !</p>
+        <div class="buttons">
+            <button onclick="move('main_content')">🎮 Voir les jeux</button>
+            <button id="upload_move" class="locked">⬆️ Uploader un jeu</button>
+        </div>
+    </div>
+    <div id="infos" style="visibility: hidden; display: none">
+        <h1>Bienvenue <span id="name_info"></span></h1>
+        <p>Vous êtes bien connecté sur l'application !
+            N'oubliez pas d'installer <a href="#">l'application cliente</a> pour permettre la communication entre le
+            site et votre console !</p>
+        <button onclick="disconnect();">Se déconnecter</button>
+    </div>
+    <div id="login">
+        <h1>Connexion</h1>
+        <form onsubmit="authentification(this, event)">
+            <label for="username">Identifiant</label>
+            <input type="text" id="username" name="username" placeholder="Votre identifiant" required>
+            <label for="password">Mot de passe</label>
+            <input type="password" id="password" name="password" placeholder="Votre mot de passe" required>
+            <input type="submit" value="Connexion">
+        </form>
+        <span id="login_error"></span>
+    </div>
+</header>
+
+<main id="main_content">
+    <h1>Collection de jeux</h1>
+    <div id="game_grid">
+    </div>
+</main>
+<script src="js/global.js"></script>
+<script src="js/index.js"></script>
+<script src="js/authentification.js"></script>
+</body>
+</html>
